@@ -498,3 +498,78 @@ VIT Chennai
 This repository should contain only code, sample outputs and documentation that are permitted to be shared publicly.
 
 Any company-specific drawings, client information, internal standards, proprietary data or confidential project files should be removed or anonymized before publishing.
+
+---
+
+## Generated Outputs
+
+The generators produce CAD-compatible DXF layouts designed for direct use and further editing in AutoCAD.
+
+### CCTV SLD Generator
+
+Multi-floor CCTV Single Line Diagram generated from floor-wise camera inputs.
+
+![CCTV SLD Preview](outputs/CCTV_preview.png)
+
+### Fire Alarm SLD Generator
+
+Multi-floor Fire Alarm Single Line Diagram generated from structured device counts.
+
+![Fire Alarm SLD Preview](outputs/Fire_Alarm_preview.png)
+
+### Generator Execution
+
+Example of the Python-based generation workflow and successful DXF generation.
+
+![Generator Execution](outputs/generator_execution.png)
+
+---
+
+## Technology Stack
+
+- Python 3
+- ezdxf
+- AutoCAD-compatible DXF generation
+- Modular Python architecture
+- Parameter-driven CAD layout generation
+
+---
+
+## Repository Structure
+
+LVS-CAD-Automation/
+├── CCTV/
+│   ├── blocks.py
+│   ├── constants.py
+│   ├── draw.py
+│   └── main.py
+├── Fire-Alarm/
+│   ├── blocks.py
+│   ├── constants.py
+│   ├── draw.py
+│   └── main.py
+├── outputs/
+│   ├── CCTV_preview.png
+│   ├── Fire_Alarm_preview.png
+│   └── generator_execution.png
+└── README.md
+
+---
+
+## Engineering Focus
+
+The project focuses on reducing repetitive CAD drafting work through:
+
+- Parameter-driven layout generation
+- Reusable CAD symbol blocks
+- Floor-wise device configuration
+- Automatic spacing and positioning
+- Multi-floor layout generation
+- Scalable DXF output
+- Modular Python-based implementation
+
+---
+
+## Project Context
+
+Developed as an internship engineering-automation project to explore the application of programming and CAD automation to repetitive Low Voltage Systems documentation workflows.
